@@ -1,0 +1,38 @@
+#
+# system.prop for mt6737m
+#
+
+#display
+ro.sf.lcd_density=320
+persist.sys.lcd_density=320
+ro.opengles.version=196610
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# USB BICR function
+ro.sys.usb.bicr=no
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+
+ro.zygote.preload.enable=0
+
+# Disable dirty region for Mali
+debug.hwui.render_dirty_regions=false
+debug.hwui.use_buffer_age=false
+
+#gpu
+ro.hardware.egl=mali
+
+#mtk
+ro.mediatek.chip_ver=S01
+ro.mediatek.platform=MT6737M
+ro.mediatek.version.sdk=4
+persist.mtk.wcn.combo.chipid=0x0335
+persist.mtk.wcn.patch.version=-1
+persist.mtk.wcn.fwlog.status=0
+persist.mtk.wcn.dynamic.dump=0
+service.wcn.driver.ready=no
+
