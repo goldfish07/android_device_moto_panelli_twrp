@@ -14,7 +14,6 @@ TARGET_BOOTLOADER_BOARD_NAME := mt6737m
 
 # kernel
 ARCH := arm
-TARGET_ARCH := arm
 KERNEL_ARCH := arm
 TARGET_KERNEL_ARCH := arm
 TARGET_KMODULES := true
@@ -23,13 +22,15 @@ TARGET_KERNEL_HAVE_NTFS := true
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
+BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_TAGS_OFFSET := 0xE000000
+TARGET_KERNEL_SOURCE := kernel/moto/panelli
 TARGET_KERNEL_CONFIG := panelli_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 #TARGET_PREBUILT_KERNEL := device/moto/panelli/zImage-dtb
-TARGET_KERNEL_SOURCE := kernel/moto/panelli
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive androidboot.selinux=disabled 
-BOARD_KERNEL_OFFSET := 0x00008000
+
+#toolchains
 BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin
@@ -45,10 +46,8 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 419430400
 BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := Moto_panelli,Moto panelli,panelli,panelli
+TARGET_OTA_ASSERT_DEVICE := Moto_panelli,Moto panelli,panelli
 
-# USB
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := false

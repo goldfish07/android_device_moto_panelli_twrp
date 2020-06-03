@@ -5,7 +5,7 @@ PRODUCT_RELEASE_NAME := panelli
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/moto/panelli/omni_panelli.mk)
+$(call inherit-product, device/moto/panelli/device_panelli.mk)
 
 # Resolution
 TARGET_SCREEN_WIDTH := 720
