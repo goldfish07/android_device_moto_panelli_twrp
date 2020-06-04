@@ -24,10 +24,10 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_RAMDISK_OFFSET := 0x04000000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_TAGS_OFFSET := 0xE000000
-TARGET_KERNEL_SOURCE := kernel/moto/panelli
-TARGET_KERNEL_CONFIG := A158_debug_defconfig #panelli_defconfig
+#TARGET_KERNEL_SOURCE := kernel/moto/panelli
+#TARGET_KERNEL_CONFIG := panelli_defconfig #A158_debug_defconfig 
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-#TARGET_PREBUILT_KERNEL := device/moto/panelli/zImage-dtb
+TARGET_PREBUILT_KERNEL := device/moto/panelli/zImage-dtb
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive androidboot.selinux=disabled 
 
 #toolchains
