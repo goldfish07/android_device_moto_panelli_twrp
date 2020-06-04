@@ -14,7 +14,7 @@ TARGET_SCREEN_HEIGHT := 1280
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := panelli
-PRODUCT_NAME := device_panelli
+PRODUCT_NAME := panelli
 PRODUCT_BRAND := moto
 PRODUCT_MODEL := panelli
 PRODUCT_MANUFACTURER := moto
