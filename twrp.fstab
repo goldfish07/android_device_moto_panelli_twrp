@@ -24,7 +24,7 @@
 /tee2 	    emmc  /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/tee2 	 defaults defaults
 
 #Device[Storage]
-#Partition  [FS]   [MP]			   [MP]                  [Rules]
-/sdcard     vfat   /dev/block/mmcblk1p1    /dev/block/mmcblk1 	 flags=display="Micro SDcard";storage;wipeingui;removable
-/usb-otg    vfat   /dev/block/sda1         /dev/block/sda flags=display="USB-OTG";storage;wipeingui;removable
+#Partition  	 [FS]   [MP]			   [MP]                  [Rules]
+/external_sd     vfat   /dev/block/mmcblk1p1    /dev/block/mmcblk1 	 flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg    	 vfat   /dev/block/sda1         /dev/block/sda flags=display="USB-OTG";storage;wipeingui;removable
 
