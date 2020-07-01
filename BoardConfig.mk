@@ -72,11 +72,8 @@ TW_REBOOT_RECOVERY := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_DEFAULT_EXTERNAL_STORAGE := true
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-TW_HAVE_SELINUX := true
 TW_DEFAULT_LANGUAGE := en
 TW_HAS_MTP := true
 TW_MTP_DEVICE := /dev/mtp_usb
 #use toolbox
 TW_USE_TOOLBOX := true
-#busybox
-INTERNAL_LOCAL_CLANG_EXCEPTION_PROJECTS := external/busybox/
