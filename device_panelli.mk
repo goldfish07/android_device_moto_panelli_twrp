@@ -12,6 +12,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
     $(LOCAL_PATH)/recovery/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc \
     $(LOCAL_PATH)/recovery/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
+    $(LOCAL_PATH)/recovery/root/sbin/adbd:root/sbin/adbd \
+
 
 PRODUCT_PACKAGES += \
     charger_res_images \
